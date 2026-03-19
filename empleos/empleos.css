@@ -220,8 +220,61 @@ main > section:nth-child(2){
 
 article{
     padding: 1rem;
-    border: 1px solid var(--border) ;
+    border: 1px solid var(--border);
     display: flex;
     padding: 2rem;
+    align-items: center;
 }
 
+.tarjetasResultado > article{
+    border-bottom: none;
+
+    button{
+        height: 3rem;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+}
+
+.tarjetasResultado > article:first-of-type{
+        margin-top: 1rem;
+        border-radius: 1rem 1rem 0 0;
+}
+
+.tarjetasResultado > article:last-of-type{
+    border: 1px solid var(--border);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.paginacion{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    margin-block: 2rem;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        text-decoration: none;
+        color: var(--text-muted);
+        border-radius: .3rem;
+        transition: all .3s;
+
+        &:hover {
+            background-color: var(--text-primary);
+        }
+
+        &.is-active{
+            background-color: var(--primary-light);
+            color: var(--text-primary);
+            pointer-events: none;
+        }
+    }
+}
