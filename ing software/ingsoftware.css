@@ -139,6 +139,11 @@ button {
     } 
 }
 
+.is-applied{
+    pointer-events: none;
+    background-color: var(--text-muted);
+}
+
 main{
     max-width: 62rem;
     width: 100%;
@@ -182,3 +187,4 @@ article{
     }
    
 }
+
