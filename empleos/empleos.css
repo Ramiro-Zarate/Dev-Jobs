@@ -240,14 +240,19 @@ article{
     }
 }
 
-.tarjetasResultado > article:first-of-type{
+.job-listing > article:first-of-type{
         margin-top: 1rem;
         border-radius: 1rem 1rem 0 0;
 }
 
-.tarjetasResultado > article:last-of-type{
+.job-listing > article:last-of-type{
     border: 1px solid var(--border);
     border-radius: 0 0 1rem 1rem;
+}
+
+.is-applied{
+    background-color: var(--text-muted);
+    pointer-events: none;
 }
 
 .paginacion{
