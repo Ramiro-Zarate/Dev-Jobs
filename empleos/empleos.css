@@ -224,6 +224,7 @@ article{
     display: flex;
     padding: 2rem;
     align-items: center;
+    border-bottom: none;
 }
 
 .tarjetasResultado > article{
