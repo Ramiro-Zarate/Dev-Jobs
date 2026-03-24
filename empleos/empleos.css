@@ -222,6 +222,7 @@ article{
     padding: 1rem;
     border: 1px solid var(--border);
     display: flex;
+    flex-direction: row;
     padding: 2rem;
     align-items: center;
     border-bottom: none;
